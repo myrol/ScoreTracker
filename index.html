@@ -6,40 +6,44 @@
         </title>
         <script src="scripts/Game.js"></script>
         <script src="scripts/Player.js"></script>
-        <style src="styles/style.css"></style>
+        <link rel="stylesheet" href="styles/style.css"></link>
     </head>
     <body>
-        <h1>
-            Tournament
-        </h1>
-
-        <div>
-            <h2> Create new Player </h2>
-            <input type="text" id="player_add_txt" placeholder="Name">
-            <input type="button" id="player_add_btn" value="Add Player">
-        </div>
-        <div>
-            <ul id="player_list"></ul>
-        </div>
-
-        <div>
+        <div class="centered">
             <div>
-                <h2> Create new Game </h2>
-                <input type="text" id="player1_add_txt" placeholder="Player 1">
-                <input type="text" id="player2_add_txt" placeholder="Player 2">
-                <input type="button" id="game_add_btn" value="Create new Game">
+                <h1> Tournament </h1>
+            </div>
+            
+    
+            <div>
+                <h2> Create new Player </h2>
+                <input type="text" id="player_add_txt" placeholder="Name">
+                <input type="button" id="player_add_btn" value="Add Player">
             </div>
             <div>
-                <table id="game_table" border="1px solid black">
-                    <tr>
-                        <th> Player 1 </th>
-                        <th> Player 2 </th>
-                        <th> Terminated </th>
-                        <th> Score </th>
-                    </tr>
-                </table>
+                <ul id="player_list"></ul>
+            </div>
+    
+            <div>
+                <div>
+                    <h2> Create new Game </h2>
+                    <input type="text" id="player1_add_txt" placeholder="Player 1">
+                    <input type="text" id="player2_add_txt" placeholder="Player 2">
+                    <input type="button" id="game_add_btn" value="Create new Game">
+                </div>
+                <div>
+                    <table id="game_table" border="1px solid black">
+                        <tr>
+                            <th> Player 1 </th>
+                            <th> Player 2 </th>
+                            <th> Terminated </th>
+                            <th> Score </th>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
+        
         <script src="scripts/Badminton.js"></script>
     </body>
 </html>

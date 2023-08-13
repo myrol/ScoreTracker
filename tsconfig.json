@@ -3,11 +3,12 @@
         "target": "ES2015",
         "noImplicitAny": true,
         "removeComments": true,
-        "preserveConstEnums": true
+        "preserveConstEnums": true,
+        "outDir": "scripts/"
     },
     "files": [
-        "scripts/Player.ts",
-        "scripts/Game.ts",
-        "scripts/Badminton.ts"
+        "scripts/src/Player.ts",
+        "scripts/src/Game.ts",
+        "scripts/src/Badminton.ts"
     ]
 }

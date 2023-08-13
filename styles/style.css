@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    background: #f0f0f0;
+    color: #0f0f0f;
+    font-family: Quicksand, sans-serif;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.centered table {
+    align-items: center
+}
+
+.centered ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
