@@ -21,8 +21,8 @@ game_add_btn.addEventListener("click", function() {
     const player2: Player = getPlayer(player2_txt.value); 
     const game: Game = new Game(games.length ,player1, player2);
     games.push(game);
-    updateIngame(player1);
-    updateIngame(player2);
+    updateIngameStatus(player1);
+    updateIngameStatus(player2);
     updateGameTable();
     updatePlayerList();
 });
@@ -59,8 +59,8 @@ function updateGameTable() {
                     Number.parseInt(s1.value), 
                     Number.parseInt(s2.value)
                 );
-                updateIngame(game.player1);
-                updateIngame(game.player2);
+                updateIngameStatus(game.player1);
+                updateIngameStatus(game.player2);
                 updateGameTable();
                 updatePlayerList();
             });
@@ -101,7 +101,7 @@ function getPlayer(name: string): Player {
     return player;
 }
 
-function updateIngame(_player: Player) {
+function updateIngameStatus(_player: Player) {
     for (const game of games) {
         if (_player === game.player1 || _player === game.player2) {
             if (game.ongoing) {
